@@ -3408,12 +3408,12 @@
     <script type="text/javascript" src="http://zeptojs.com/zepto.js"></script>
     <script type="text/javascript">
         var adPos = $('#js_ad_area').position().top
-        $(window).on('touchmove',function() {
+        $(window).on('scroll',function() {
             var scrollPos = $(window).scrollTop()
             console.log(adPos-scrollPos)
             if(adPos-scrollPos<350){
                 $('#js_ad_inner').addClass('show')
-                $(window).off('touchmove')
+                $(window).off('scroll')
             }
         })
         
