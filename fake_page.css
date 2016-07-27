@@ -40,10 +40,10 @@
     box-sizing: border-box;
 }
 .ad_logo{width: 35px;height: 35px; display: inline-block;margin: 15px 10px;vertical-align: middle;}
-.ad_desc_box{display: inline-block;vertical-align: middle;}
+.ad_desc_box{display: inline-block;vertical-align: middle;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
 .btn_more{position: absolute;right: 10px;top: 22px; display: inline-block; color: #576B95;font-size: 11px;border: 1px solid #576B95;border-radius: 3px;height: 22px;line-height: 22px;padding: 0 6px;}
-.ad_title{font-size: 14px;}
-.ad_details{font-size: 11px;color: #878787;}
+.ad_title{font-size: 14px;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.ad_details{font-size: 11px;color: #878787;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
 .ad_details:after{content: '';display: inline-block;width: 4px;height: 4px; border-width: 0 1px 1px 0;border-style: solid;border-color: #878787;-webkit-transform: rotate(45deg) translateY(-3px);transform: rotate(45deg) translateY(-4px);margin-left: 3px;}
 .btn_about{
     display: none; font-size: 14px;line-height: 50px;padding:0 30px;
@@ -55,21 +55,22 @@
     bottom: -44px;    
     left: 60px;
     z-index: 9;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .icon_praise_gray {
-  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA+CAYAAAA1dwvuAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACd0lEQVRYhe2XMWhUMRjHfycdpDg4iJN26CQih4NUlFIc3iTasaAO+iZBnorIId2CDg6PLqWDXSy0p28TJ6ejILgoKiLFSeRcnASLnDf2HPKll8b3ah5NQPB+cHzJl0v+73J5Sf6NwWCAD6kqxoEV4BywCTwA2j59V9QlxrxUNJeBOSkfBtaAHvDcp/O+GkJHJd4H7kr5nm/nOkJHJH4FHkv5WAyhUxLfAgelvBlUKFXFBNCU6oYl+j6oEHohADwFtoDTUn8dTChVxX7gjlSfSJyS+CaYEDCPXs4d4IXkzDR+8BWqfI9SVUyil/ENST20ml8BF4Afu4z9HT3V80B/TAY9CxTABNAHxp1Oj4B1q34dWAamGa5Al0PALfSs3TS/aE1EcERWgQXgozPIN+Ai6O2ljFQVM8BLZJqN0KTEhgj9kvrViqf1wYz5BcoXQ38Pg9uckfiuSigU0xLXowmlqpgCjgNd4FM0IeCKxGcmEUtoRqLZScILpaqYA06iN9/tTTfGLzKvxLKdDCqUquIEcB59xK9GE2J4xLeBn3ZD1abaq/sQqSpmgWvo82rBbTdCPeAA4N69/noXS1XhphaBz27SPPVtapz/FXSBFsNDcgcN3wvkiBEjRoSndAtqLXXKvuvtYfMs+SP3T3tYm6ge1iaqh7UJ62HRTqNZko/mYV3CeVjA9rAuUTxsGd4edrcX1vWwddn2sHmWaA/bWuq4HnYLff3aC7U8bAiaMPyPJp3GhnxCUOlhQxPdwxrieViLbp4lUT2sIbqHNcTzsBYbeZZE9bCGeB7WIrqHNbTzLNnhYWMIlXpYI9Rz8gM8/GsFi3mW/Ace9jf8QZwIX5o4uQAAAABJRU5ErkJggg==) no-repeat 0 0;
+  background: transparent url(data:image/png;base64,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) no-repeat 0 0;
   width: 16px;
   height: 16px;
   vertical-align: middle;
   display: inline-block;
   -webkit-background-size: 100% auto;
   background-size: 100% auto;
-  margin-top: -2px;
+  margin-top: -4px;
   margin-right: 5px;
 }
 .praised .icon_praise_gray{
-  background-position: 0 -22px;
+  background-position: 0 -32px;
 }
 .about_wrp{position: absolute;top: 0;left: 0;right: 0;bottom: 0;padding: 20px 15px 15px;}
 .about_title{color: #222222;text-align: center;font-size: 20px;margin-top: 20px;}
@@ -83,7 +84,13 @@
     border-radius: 5px;
     vertical-align: middle;
     font-size: 15px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+.about_like_btn:active{
+    border: 1px solid #354567;
+    color: #354567;
+}
+.about_like_btn:active .icon_praise_gray{background-position: 0 -16px;}
 .about_like_opr{text-align: center;margin-top: 60px;}
 .about_link_learnmore{position: absolute;bottom: 30px;left: 0;right: 0;text-align: center;font-size: 14px;}
 
