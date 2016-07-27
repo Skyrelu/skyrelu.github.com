@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="format-detection" content="telephone=no">
+	    <title>关于</title>
+	    <link rel="dns-prefetch" href="http://res.wx.qq.com/">
+    	<link rel="dns-prefetch" href="http://mmbiz.qpic.cn/">
+    	<style type="text/css">
+    		html {
+    		    -ms-text-size-adjust: 100%;
+    		    -webkit-text-size-adjust: 100%;
+    		    /*禁止横屏切换时字号变化 @x*/
+    		    line-height: 1.6;
+    		    /*1.6为客户端标准字号对应的行高，调整webview里的字号时，会把html的行高设为1.6的对应比例*/
+    		}
+    		
+    		body {
+    		    -webkit-touch-callout: none;
+    		    /*禁止长按链接调起系统菜单 @x*/
+    		    font-family: -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    		    
+    		    line-height: inherit;
+    		}
+    		
+    		body.rich_media_empty_extra {
+    		    background-color: #ffffff;
+    		}
+    		
+    		body.rich_media_empty_extra .rich_media_area_primary:before {
+    		    display: none;
+    		}
+    		
+    		h1,
+    		h2,
+    		h3,
+    		h4,
+    		h5,
+    		h6 {
+    		    font-weight: 400;
+    		    font-size: 16px;
+    		}
+    		
+    		* {
+    		    margin: 0;
+    		    padding: 0;
+    		}
+    		
+    		a {
+    		    color: #607fa6;
+    		    text-decoration: none;
+    		}
+    	</style>
+    	<link rel="stylesheet" type="text/css" href="./fake_page.css">
+	</head>
+	<body>
+        <div class="about_wrp">
+            <h1 class="about_title">关于赞助广告</h1>
+            <p class="about_desc">你看到这则广告，是因为视觉志选择了宜家家居IKEA作为本文的赞助方。良性的赞助行为将会鼓励文章作者产出更多优质内容。</p>
+            <p class="about_desc">如果你也觉得这个广告很赞，请告诉我们，此评价也将反馈给新视线作为参考。</p>
+            <div class="about_like_opr">
+                <a class="about_like_btn" id="js_like_btn"><i class="icon_praise_gray"></i>赞</a>
+            </div>
+            <a class="about_link_learnmore">了解更多赞助广告信息</a>
+        </div>
+	</body>
+    <script type="text/javascript" src="./zepto.js"></script>
+    <script type="text/javascript">
+        $("#js_like_btn").on('touchstart',function() {
+            $(this).toggleClass('praised')
+        })
+    </script>
+</html>
