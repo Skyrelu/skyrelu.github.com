@@ -3381,9 +3381,9 @@
                 $(window).off('scroll')
             }
         })
-        $(window).on('click',function(e){
+        $(window).on('touchstart',function(e){
             console.log(e.target.className!='ad_title')
-            if(e.target.className!='ad_title'&&e.target.className!='ad_details'){
+            if(e.target.className!='ad_title' && e.target.className!='ad_details' && e.target.className!='btn_about' && $('#js_btn_about').css('display')=='inline-block'){
                 $('#js_btn_about').css('display','none')
             }
             
